@@ -1,0 +1,54 @@
+/* Общие стили для примера */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+/* 3. Интерактивные ссылки (в шапке) */
+header nav a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: red;
+}
+header nav a:active {
+  color: orange;
+}
+
+/* 1. Интерактивная кнопка */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* зеленый фон */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #45a049; /* чуть более тёмный зеленый при наведении */
+}
+.btn:active {
+  background-color: #3e8e41; /* ещё более тёмный при нажатии */
+}
+
+/* 2. Анимация блока с @keyframes */
+.animate-box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 50px auto;
+  position: relative;
+  /* Применяем анимацию: имя, длительность 4с, бесконечное повторение */
+  animation: moveAndColor 4s infinite;
+}
+@keyframes moveAndColor {
+  0%   { left: 0; background-color: coral; }
+  50%  { left: 50px; background-color: aqua; }
+  100% { left: 0; background-color: coral; }
+}

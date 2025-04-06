@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Оформление заказа</h2>
+  <form action="#">
+    <label>Адрес:</label><br>
+    <input type="text" name="address" required><br><br>
+
+    <label>Дата привоза:</label><br>
+    <input type="date" name="date" required><br><br>
+
+    <label>Комментарий:</label><br>
+    <textarea name="comment"></textarea><br><br>
+
+    <label>Данные карты:</label><br>
+    <input type="text" name="card" pattern="[0-9]{16}" required placeholder="1234123412341234"><br><br>
+
+    <label>Номер телефона:</label><br>
+    <input type="tel" name="phone" pattern="[0-9]{11}" required><br><br>
+
+    <button type="submit">Оформить заказ</button>
+  </form>
+  <p><a href="index.html">Выйти из учетной записи</a></p>
+</body>
+</html>
